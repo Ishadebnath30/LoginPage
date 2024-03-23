@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+    <!-- Css Only -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://i.ibb.co/1dMKHbB/istockphoto-1192919707-612x612-removebg-preview.png"
+                alt="istockphoto-1192919707-612x612-removebg-preview" border="0">
+        </div>
+        <ul>
+            <li>
+                <form>
+                    <input type="text" name="" id="" placeholder="Search..">
+                    <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                </form>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="#">lessons</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Log in</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="openPopup('./Components/Student-LogDialog.html')">Student Log in</a>
+                        <a href="#" onclick="openPopup('./Components/Teacher-LogDialog.html')">Teacher Log in</a>
+                        <a href="#" onclick="openPopup('./Components/Admin-LogDialog.html')">Admin Log in</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        from section......
+    </section>
+    <script>
+        var width = 600;
+        var height = 600;
+        var leftPosition = (window.innerWidth - width) / 2; // Calculate the left position to center the window horizontally
+        var topPosition = (window.innerHeight - height) / 2; // Calculate the top position to center the window vertically
+
+
+        function openPopup(url) {
+            window.open(url, '_blank', 'width=' + width + ',height=' + height + ',left=' + leftPosition + ',top=' + topPosition);
+        }
+    </script>
+</body>
+
+</html>
